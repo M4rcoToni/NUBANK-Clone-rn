@@ -9,10 +9,11 @@ module.exports = {
       colors: {
         'purple': {
           100: '#830AD1',
-          900: '#121214'
+          200: '#7A559B'
         },
         'white': {
-          100: '#EFEFEF'
+          100: '#FFFFFF',
+          200: '#EFEFEF'
         }
       }
     },

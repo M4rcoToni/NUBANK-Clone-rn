@@ -10,10 +10,14 @@ export function Button({ title, ...rest }: Props) {
   return (
     <TouchableOpacity
       activeOpacity={0.7}
-      className='h-16 w-80 rounded-full bg-white-100 items-center justify-center'
+      className='h-14 w-80 rounded-full bg-white-100 items-center justify-center'
       {...rest}
     >
-      <Text>{title}</Text>
+      <Text
+        className='font-semibold'
+      >
+        {title}
+      </Text>
     </TouchableOpacity>
   );
 }

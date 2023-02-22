@@ -2,19 +2,24 @@ import React, { useEffect } from 'react';
 import { View, Image, Alert } from 'react-native';
 import { Button } from '../components/Button';
 import * as LocalAuthentication from 'expo-local-authentication';
+import { useNavigation } from '@react-navigation/native';
 
 
 export function Lock() {
+  const navigation = useNavigation();
+
   async function handleLocalAutentication() {
 
     const resultadoAutenticacao = await LocalAuthentication.authenticateAsync({
       promptMessage: 'Toque o sensor de impressão digital para continuar',
     });
     if (resultadoAutenticacao.success) {
-      Alert.alert("Autenticado")
+      navigation.navigate("home");
     }
   }
-
+  useEffect(() => {
+    handleLocalAutentication()
+  }, []);
 
 
   return (
@@ -23,7 +28,7 @@ export function Lock() {
       <View className='flex-auto justify-center'>
 
         <Image
-          className='h-16 w-32'
+          className='h-12 w-24'
           source={require('../../assets/logo.png')}
         />
       </View>
