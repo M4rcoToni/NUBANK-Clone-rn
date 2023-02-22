@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
-import { Feather } from '@expo/vector-icons'
+import { Feather } from '@expo/vector-icons';
 
 interface Props {
   isClosed: boolean;
+  handleShowMoney: () => void;
 }
 
 export function Header({ isClosed }: Props) {
@@ -11,6 +12,8 @@ export function Header({ isClosed }: Props) {
 
   function handleShowMoney() {
     setIsOpen(prevState => !isOpen)
+    console.log(isOpen);
+
   }
   return (
     <View className='h-40 bg-purple-100 '>
@@ -28,18 +31,19 @@ export function Header({ isClosed }: Props) {
             onPress={handleShowMoney}
             activeOpacity={1}
           >
-            {isOpen ?
-              <Image
-                className='w-10 h-10'
-                source={require('../../assets/app-icons/eyeopen.png')}
-              />
-              :
-              <Image
-                className='w-10 h-10'
-                source={require('../../assets/app-icons/eyeclose.png')}
-              />
+            {
+              isOpen ?
+                <Image
+                  className='w-10 h-10'
+                  source={require('../../assets/app-icons/eyeopen.png')}
+                />
+                :
+                <Image
+                  className='w-10 h-10'
+                  source={require('../../assets/app-icons/eyeclose.png')}
+                />
             }
-
+            {isOpen}
           </TouchableOpacity>
 
           <TouchableOpacity
