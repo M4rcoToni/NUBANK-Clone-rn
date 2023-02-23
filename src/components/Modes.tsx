@@ -10,11 +10,12 @@ export function Modes() {
       horizontal
     >
       <NewModes
-        title='Aitve o Modo Rua e proteja mais a sua conta.'
-        textPurple='' textEndPurple={false} />
+        title=' e proteja mais a sua conta.'
+        textPurple='Aitve o Modo Rua ' 
+        textEndPurple={false} />
       <NewModes
         title='Aitve o Modo Rua e proteja mais a sua conta.'
-        textPurple='' textEndPurple={false} />
+        textPurple='' textEndPurple={true} />
       <NewModes
         title='Aitve o Modo Rua e proteja mais a sua conta.'
         textPurple='' textEndPurple={false} />
