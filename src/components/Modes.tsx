@@ -11,16 +11,13 @@ export function Modes() {
     >
       <NewModes
         title='Aitve o Modo Rua e proteja mais a sua conta.'
-        textPurple=''
-      />
+        textPurple='' textEndPurple={false} />
       <NewModes
         title='Aitve o Modo Rua e proteja mais a sua conta.'
-        textPurple=''
-      />
+        textPurple='' textEndPurple={false} />
       <NewModes
         title='Aitve o Modo Rua e proteja mais a sua conta.'
-        textPurple=''
-      />
+        textPurple='' textEndPurple={false} />
     </ScrollView>
   );
 }
