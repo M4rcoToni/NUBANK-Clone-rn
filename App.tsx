@@ -1,8 +1,21 @@
-import { StyleSheet, Text, View, StatusBar } from 'react-native';
+import { StatusBar } from 'react-native';
 import { Routes } from './src/routes';
-import { Lock } from './src/screens/Lock';
+
+import {
+  useFonts,
+  Inter_400Regular,
+  Inter_600SemiBold,
+  Inter_700Bold,
+  Inter_900Black
+} from '@expo-google-fonts/inter';
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    Inter_400Regular,
+    Inter_600SemiBold,
+    Inter_700Bold,
+    Inter_900Black
+  })
   return (
     <>
       <StatusBar

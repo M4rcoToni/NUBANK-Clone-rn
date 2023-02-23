@@ -6,6 +6,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'Inter': 'Inter_400Regular'
+      },
+      width: {
+        '18': '4.5rem'
+      },
+      height: {
+        '18': '4.5rem'
+      },
       colors: {
         'purple': {
           100: '#830AD1',
