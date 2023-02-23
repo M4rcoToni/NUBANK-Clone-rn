@@ -11,15 +11,24 @@ export function NewModes({ title, textPurple, textEndPurple }: Props) {
       <View className='w-auto h-20 px-8 rounded-xl bg-white-200'>
 
         {
-
-        }
-        <Text className='mt-4 text-md mr-6' style={{ width: 220 }}>
+textEndPurple?
+  
+  <Text className='mt-4 text-md mr-6' style={{ width: 220 }}>
+          
+          <Text className='text-purple-200'>
+            {textPurple}
+          </Text>
+          {title}
+        </Text>
+  :
+  <Text className='mt-4 text-md mr-6' style={{ width: 220 }}>
           {title}
           <Text className='text-purple-200'>
             {textPurple}
           </Text>
+          
         </Text>
-
+        }
       </View>
     </View>
   );
