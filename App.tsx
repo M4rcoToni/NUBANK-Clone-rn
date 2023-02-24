@@ -1,4 +1,4 @@
-import { StatusBar } from 'react-native';
+import { StatusBar, ActivityIndicator } from 'react-native';
 import { Routes } from './src/routes';
 
 import {
@@ -23,7 +23,7 @@ export default function App() {
         backgroundColor="#68259F"
         translucent
       />
-      <Routes />
+      {fontsLoaded ? <Routes /> : <ActivityIndicator />}
     </>
   );
 }
