@@ -8,7 +8,7 @@ interface Props {
 export function ListModes({ title, textPurple, textEndPurple }: Props) {
   return (
     <View className='px-2 h-content  mt-6 justify-center items-center'>
-      <View className='w-auto h-20 px-7 rounded-xl bg-white-200'>
+      <View className='w-auto pb-9 px-7 rounded-xl bg-white-200'>
 
         {
           !textEndPurple ?

@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        lg: ['14px', '20px'],
+        lg: ['34px', '12px'],
       },
       fontFamily: {
         'Inter-400': 'Inter_400Regular',

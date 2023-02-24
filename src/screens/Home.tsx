@@ -6,6 +6,7 @@ import { Header } from '../components/Header';
 import { Tools } from '../components/Tools';
 import { Modes } from '../components/Modes';
 import { CreditCard } from '../components/CreditCard';
+import { Following } from '../components/Following';
 
 
 export function Home() {
@@ -36,6 +37,8 @@ export function Home() {
       <CreditCard
         isClosed={isOpen}
       />
+
+      <Following />
 
       <Text>NAVBAR</Text>
     </ScrollView >

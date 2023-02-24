@@ -9,7 +9,7 @@ interface Props {
 export function CreditCard({ isClosed }: Props) {
   return (
     <TouchableOpacity
-      className=' h-contente pt-8'
+      className=' h-contente pt-6'
       activeOpacity={1}
     >
       <Divider />
@@ -59,12 +59,12 @@ export function CreditCard({ isClosed }: Props) {
         <View className=' items-baseline'>
 
           <View
-            className=' text-gray-500 font-Inter-600  mb-4'
+            className=' text-gray-500 font-Inter-600 '
           >
             {
               isClosed ?
                 <Text
-                  className=' text-gray-500 font-Inter-600  mb-4'
+                  className=' text-gray-500 font-Inter-600  mb-6'
                 >Limite adicional para boletos:
                   <Text
                     className=' text-sm font-Inter-600 text-purple-100 '
@@ -73,7 +73,7 @@ export function CreditCard({ isClosed }: Props) {
 
                 :
                 <Text
-                  className=' text-gray-500 font-Inter-600 '
+                  className=' text-gray-500 font-Inter-600 mb-4'
                 >Limite adicional para boletos:
                   <Text
                     className=' font-bold font-Inter-600 text-gray-500 text-lg '
