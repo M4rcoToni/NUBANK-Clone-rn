@@ -27,7 +27,7 @@ export function CreditCard({ isClosed }: Props) {
 
       </View>
 
-      <View className='px-6 pb-4 '>
+      <View className='px-6  '>
         <Text className=' text-sm  font-Inter-600  text-gray-500'>
           Fatura atual
         </Text>
@@ -56,20 +56,32 @@ export function CreditCard({ isClosed }: Props) {
               > ••••</Text>
           }
         </Text>
-        <Text
-          className=' text-gray-500 font-Inter-600 '
-        >Limite adicional para boletos:
-          {
-            isClosed ?
-              <Text
-                className=' text-sm font-Inter-600 text-purple-100 '
-              > R$ 250,00</Text>
-              :
-              <Text
-                className=' font-bold font-Inter-600 text-gray-500'
-              > ••••</Text>
-          }
-        </Text>
+        <View className=' items-baseline'>
+
+          <View
+            className=' text-gray-500 font-Inter-600  mb-4'
+          >
+            {
+              isClosed ?
+                <Text
+                  className=' text-gray-500 font-Inter-600  mb-4'
+                >Limite adicional para boletos:
+                  <Text
+                    className=' text-sm font-Inter-600 text-purple-100 '
+                  > R$ 250,00</Text>
+                </Text>
+
+                :
+                <Text
+                  className=' text-gray-500 font-Inter-600 '
+                >Limite adicional para boletos:
+                  <Text
+                    className=' font-bold font-Inter-600 text-gray-500 text-lg '
+                  > ••••</Text>
+                </Text>
+            }
+          </View>
+        </View>
       </View>
       <Divider />
 

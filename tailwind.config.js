@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        lg: ['14px', '20px'],
+      },
       fontFamily: {
         'Inter-400': 'Inter_400Regular',
         'Inter-600': 'Inter_600SemiBold'
@@ -18,9 +21,8 @@ module.exports = {
       },
       colors: {
         gray: {
-          '100': '#5B5B5B'
-        }
-        ,
+          100: '#5B5B5B'
+        },
         'purple': {
           100: '#830AD1',
           200: '#7A559B'
