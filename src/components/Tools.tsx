@@ -4,16 +4,14 @@ import { View, Text, Image, ScrollView } from 'react-native';
 
 export function Tools() {
   return (
-    <View className='h-40 w-full justify-center'>
+    <View className='h-content w-full justify-center'>
 
       <ScrollView
-
         showsHorizontalScrollIndicator={false}
-
-        contentContainerStyle={{ paddingRight: 12 }}
+        contentContainerStyle={{ paddingRight: 10 }}
         horizontal
       >
-        <View className='ml-8 justify-center items-center'>
+        <View className='ml-6 justify-center items-center'>
           <View className='h-20 w-20 rounded-full bg-white-200 items-center justify-center mx-1'>
             <Image
               className='w-9 h-9 ml-1'

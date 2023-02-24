@@ -10,9 +10,9 @@ interface Props {
 export function Header({ isClosed, onPressed }: Props) {
 
   return (
-    <View className='h-40 bg-purple-100 '>
+    <View className='h-content bg-purple-100 pl-3 pt-2'>
       <View className='flex-row justify-between mt-10'>
-        <View className='h-12 w-12 rounded-full bg-white-200 ml-5 justify-center items-center'>
+        <View className='h-12 w-12 rounded-full bg-white-200 ml-1 justify-center items-center'>
           <Feather
             name='user'
             size={24}
@@ -59,7 +59,7 @@ export function Header({ isClosed, onPressed }: Props) {
           </TouchableOpacity>
         </View>
       </View>
-      <View className='ml-6 mt-5'>
+      <View className='pl-4  pb-5 pt-6'>
         <Text className='text-white-100 font-medium text-xl'
         >Olá, Marcoo</Text>
       </View>

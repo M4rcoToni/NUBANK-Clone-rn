@@ -4,8 +4,8 @@ import { Account } from '../components/Account';
 import { Cards } from '../components/Cards';
 import { Header } from '../components/Header';
 import { Tools } from '../components/Tools';
-import { NewModes } from '../components/NewModes';
 import { Modes } from '../components/Modes';
+import { CreditCard } from '../components/CreditCard';
 
 
 export function Home() {
@@ -16,7 +16,11 @@ export function Home() {
   }
 
   return (
-    <View className='flex-1 bg-white-100'>
+    <ScrollView
+      className='flex-1 bg-white-100'
+      showsVerticalScrollIndicator={false}
+
+    >
       <Header
         onPressed={handleShowMoney}
         isClosed={isOpen}
@@ -29,9 +33,11 @@ export function Home() {
       <Cards />
 
       <Modes />
+      <CreditCard
+        isClosed={isOpen}
+      />
 
-
-      <Text>Home</Text>
-    </View >
+      <Text>NAVBAR</Text>
+    </ScrollView >
   );
 }
