@@ -7,6 +7,8 @@ import { Tools } from '../components/Tools';
 import { Modes } from '../components/Modes';
 import { CreditCard } from '../components/CreditCard';
 import { Following } from '../components/Following';
+import { Loan } from '../components/Loan';
+import { FindOut } from '../components/FindOut';
 
 
 export function Home() {
@@ -40,6 +42,9 @@ export function Home() {
 
       <Following />
 
+      <Loan />
+
+      <FindOut />
       <Text>NAVBAR</Text>
     </ScrollView >
   );
