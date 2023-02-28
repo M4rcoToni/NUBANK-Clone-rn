@@ -6,9 +6,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontSize: {
-        lg: ['34px', '12px'],
-      },
       fontFamily: {
         'Inter-400': 'Inter_400Regular',
         'Inter-600': 'Inter_600SemiBold'
@@ -29,7 +26,8 @@ module.exports = {
         },
         'white': {
           100: '#FFFFFF',
-          200: '#EFEFEF'
+          200: '#EFEFEF',
+          'transparent': ' rgba(255, 255, 255, 0.5)'
         }
       }
     },

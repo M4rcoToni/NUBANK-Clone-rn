@@ -14,7 +14,7 @@ export function Account({ isClosed }: Props) {
     >
       <View className='flex-row justify-between '>
 
-        <Text className='font-Inter-600 text-lg'>
+        <Text className='font-Inter-600 text-xl'>
           Conta
         </Text>
         <Ionicons
@@ -26,7 +26,7 @@ export function Account({ isClosed }: Props) {
       {
         isClosed ?
           <Text
-            className='pt-3 text-lg font-Inter-600 '
+            className='pt-3 text-xl font-Inter-600 '
           >R$ 0,23</Text>
           :
           <Text

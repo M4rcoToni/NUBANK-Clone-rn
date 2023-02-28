@@ -9,6 +9,7 @@ import { CreditCard } from '../components/CreditCard';
 import { Following } from '../components/Following';
 import { Loan } from '../components/Loan';
 import { FindOut } from '../components/FindOut';
+import { NavBar } from '../components/NavBar';
 
 
 export function Home() {
@@ -19,33 +20,37 @@ export function Home() {
   }
 
   return (
-    <ScrollView
-      className='flex-1 bg-white-100'
-      showsVerticalScrollIndicator={false}
+    <>
+      <ScrollView
+        className='flex-1 bg-white-100'
+        showsVerticalScrollIndicator={false}
 
-    >
-      <Header
-        onPressed={handleShowMoney}
-        isClosed={isOpen}
-      />
-      <Account
-        isClosed={isOpen}
-      />
-      <Tools />
+      >
+        <Header
+          onPressed={handleShowMoney}
+          isClosed={isOpen}
+        />
+        <Account
+          isClosed={isOpen}
+        />
+        <Tools />
 
-      <Cards />
+        <Cards />
 
-      <Modes />
-      <CreditCard
-        isClosed={isOpen}
-      />
+        <Modes />
+        <CreditCard
+          isClosed={isOpen}
+        />
 
-      <Following />
+        <Following />
 
-      <Loan />
+        <Loan />
 
-      <FindOut />
-      <Text>NAVBAR</Text>
-    </ScrollView >
+        <FindOut />
+
+
+      </ScrollView >
+      <NavBar />
+    </>
   );
 }

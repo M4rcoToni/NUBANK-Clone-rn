@@ -14,12 +14,12 @@
     "expo": "~47.0.12",
     "expo-local-authentication": "~13.0.2",
     "expo-status-bar": "~1.4.2",
+    "expo-updates": "~0.15.6",
     "nativewind": "^2.0.11",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-native": "0.70.5",
-    "react-native-web": "~0.18.9",
-    "expo-updates": "~0.15.6"
+    "react-native-web": "~0.18.9"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

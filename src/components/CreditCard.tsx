@@ -34,7 +34,7 @@ export function CreditCard({ isClosed }: Props) {
         {
           isClosed ?
             <Text
-              className='mt-2 mb-1 text-lg font-Inter-600 '
+              className='mt-2 mb-1 text-xl font-Inter-600 '
             >R$ 500,00</Text>
             :
             <Text
